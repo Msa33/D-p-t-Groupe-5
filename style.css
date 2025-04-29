@@ -1,20 +1,31 @@
 :root{
     --couleurbl: blue;
 }
+body{
+    width: 100%;
+}
 .n1{
     background-color: gray;
-    width: 98%;
+    width: 100%;
     height: 10%;
-    left: 1%;
-    right: 1%;
+    margin: 5px 10px;
     display: flex;
+    gap: 1200px;
+}
+.n1 h1{
+    margin-left: 15px;
+    font-size: 30px;
 }
 nav{
     float: right;
-    margin-left: 190px;
 }
 .n1 nav ul li{
     display: inline-block;
+}
+a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 30px;
 }
 .n2{
     height: 200px;
@@ -44,7 +55,7 @@ nav{
 }
 .n4, .n5, .n6{
     display: flex;
-    margin: 5px 10px;
+    margin: 5px 5px;
     width: 100%;
     height: 200px;
 }
@@ -61,7 +72,7 @@ nav{
     margin: auto 5px;
 }
 .n7{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 50px;
     width: 100%;
 }
