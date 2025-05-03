@@ -1,5 +1,5 @@
 :root{
-    --couleurbl: rgb(219, 191, 138);
+    --couleurbl: #84b067;
 }
 body{
     width: 100%;
@@ -53,7 +53,6 @@ a{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
 .formulaire{
     height: 65%;
     width: 100%;
@@ -64,8 +63,7 @@ label{
     font-size: 25px;
     font-weight: bold;
     color: #777;
-    margin:15px 10px;
-    
+    margin:15px 10px;  
 }
 input{
     width: 90%;
@@ -78,7 +76,7 @@ input{
 .TitreNLetter{
     text-align: center;
     font-size: 30px;
-    color: rgb(255, 255, 255);
+    color: #777;
     font-weight: bold;
 }
 .NewletterButtom{
@@ -129,6 +127,11 @@ span{
     height: 200px;
     border: 1px solid #84b067;
     margin: auto 5px;
+     display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
 }
 .product{
     text-align: center;
@@ -139,12 +142,61 @@ span{
     width: 100%;
     height: 200px;
 }
-.produits{
-    border: 1px solid #84b067;    
+.produits{    
     margin: auto 5px;
-    width: 20%;
     height: 100%;
+    display: inline-block;
+    width: 220px;
+    margin: 60px;
+    padding: 10px;
+    border: 1px solid #84b067;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
+.produits button {
+    background-color: #3602f3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.produits p {
+    margin: 10px 50px;
+    font-size: 15px;
+}
+.produits button:hover {
+    background-color: #84b067;
+}
+.produits img{
+    width: 100%;
+    height: 130px;
+}
+  .bloc-n3 {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 280px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .bloc-n3 h2 {
+    color: #1505f8;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .bloc-n3 p {
+    color: #080808;
+    font-size: 15px;
+    line-height: 1.6;
+  }
 .pro{
     border: 1px solid #84b067;
     width: 33%;
@@ -168,4 +220,7 @@ span{
     text-align: center;
 }
 
-
+#quantite:hover{
+    display: contents;
+    background-color: #080808;
+}
